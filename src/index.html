@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rodel's Pups</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="relative">
+      <!-- Navigation -->
+      <nav>
+        <section
+          id="nav-section"
+          class="fixed left-1/2 z-30 w-full -translate-x-1/2"
+        >
+          <!-- Navigation container -->
+          <div
+            class="nav mx-auto flex w-full items-center justify-between font-body text-txt-dark"
+          >
+            <!-- Logo-->
+            <a href="/" class="outline-none">
+              <svg class="h-20 w-40 cursor-pointer">
+                <use xlink:href="./assets/icons.svg#logo"></use>
+              </svg>
+            </a>
+            <!-- Links -->
+            <ul class="hidden gap-8 text-xl font-bold text-white lg:flex">
+              <li class="group">
+                <a href="#gallery">Gallery</a>
+                <div
+                  class="border border-prim-400 opacity-0 group-hover:opacity-100"
+                ></div>
+              </li>
+              <li class="group">
+                <a href="#types">Dogs</a>
+                <div
+                  class="border border-prim-400 opacity-0 group-hover:opacity-100"
+                ></div>
+              </li>
+
+              <li class="group">
+                <a href="#customers">Customers</a>
+                <div
+                  class="border border-prim-400 opacity-0 group-hover:opacity-100"
+                ></div>
+              </li>
+            </ul>
+            <!-- Menu button -->
+            <div class="menu-btn lg:hidden">
+              <div class="top bg-txt-dark"></div>
+              <div class="mid bg-txt-dark"></div>
+              <div class="bot bg-txt-dark"></div>
+            </div>
+
+            <!-- Login/Signup button -->
+            <div class="hidden items-center justify-center gap-8 lg:flex">
+              <a
+                id="contact-btn"
+                href="https://www.facebook.com/rodel.arcoirez"
+                class="btn bg-prim-400 text-white hover:bg-opacity-80"
+                >Contact me</a
+              >
+            </div>
+          </div>
+        </section>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero grid h-screen place-items-center">
+          <h1
+            class="p-4 text-center text-5xl uppercase text-white md:text-6xl lg:text-7xl xl:text-8xl"
+          >
+            Find your furry companion
+          </h1>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <div
+        class="menu disable absolute top-0 right-0 z-20 grid h-full w-1/2 place-items-center bg-prim-600 px-4 lg:hidden"
+      >
+        <ul class="space-y-8 text-center text-xl font-bold text-white">
+          <li class="hover:text-shadow">
+            <a href="#gallery">Dogs</a>
+          </li>
+          <li class="hover:text-shadow">
+            <a href="">Gallery</a>
+          </li>
+          <li class="hover:text-shadow">
+            <a href="">Customers</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Intro -->
+      <section id="intro">
+        <div
+          class="intro-section flex flex-col items-center justify-center gap-8 font-body"
+        >
+          <h2 class="mx-auto max-w-2xl text-4xl text-txt-dark md:text-5xl">
+            Welcome to Rodel's Pups
+          </h2>
+          <p class="tex mx-auto max-w-4xl p-6 text-txt-light md:text-lg">
+            We're dedicated to helping you find the perfect furry friend to
+            bring into your home. With our expert guidance and high-quality
+            selection, you're sure to find a pup that will steal your heart.
+            Come visit us today and discover the joy of Rodel's Pups!
+          </p>
+          <div class="btn bg-prim-400 text-white md:px-12 md:py-4 md:text-2xl">
+            <a href="https://www.facebook.com/rodel.arcoirez">Get Started!</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="bg-prim-200">
+        <div
+          class="mx-auto mt-40 mb-20 flex max-w-7xl flex-wrap items-center justify-center px-6 md:justify-between md:px-12"
+        >
+          <!-- Gallery Heading -->
+          <h2 class="my-16 text-center text-txt-dark">Our dogs</h2>
+          <!-- Gallery Content -->
+          <!-- Dogs -->
+          <div class="grid grid-cols-2 gap-8 md:order-3 md:grid-cols-4">
+            <!-- 1 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="transition group-hover:scale-110"
+                src="./assets/dogs/1.webp"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 2 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="transition group-hover:scale-110"
+                src="./assets/dogs/2.webp"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 3 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="transition group-hover:scale-110"
+                src="./assets/dogs/3.webp"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 4 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="transition group-hover:scale-110"
+                src="./assets/dogs/4.webp"
+                alt="Picture of dog"
+              />
+            </div>
+          </div>
+          <!-- See all button -->
+          <div
+            class="my-12 w-full rounded-md border-2 border-prim-400 px-12 py-2 text-center uppercase text-txt-dark hover:bg-prim-400 hover:text-white md:order-2 md:w-auto"
+          >
+            <a href="/" class="tracking-widest">see all</a>
+          </div>
+        </div>
+
+        <!-- Customers -->
+        <div
+          id="customers"
+          class="mx-auto mb-40 flex max-w-7xl flex-wrap items-center justify-center px-6 pb-16 md:justify-between md:px-12"
+        >
+          <!-- Gallery Heading -->
+          <h2 class="my-16 text-center text-txt-dark">Our customers</h2>
+          <!-- Gallery Content -->
+          <div class="grid grid-cols-2 gap-8 md:order-3 md:grid-cols-4">
+            <!-- 1 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="transition group-hover:scale-110"
+                src="./assets/customers/1.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 2 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="transition group-hover:scale-110"
+                src="./assets/customers/2.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 4 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/4.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 5 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/5.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 6 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/6.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 7 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/7.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 8 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/8.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 1 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/9.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 2 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/10.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 3 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/11.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 4 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/12.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 5 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/13.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 6 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/14.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 7 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/15.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 8 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/16.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+
+            <!-- 8 -->
+            <div class="group relative overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition group-hover:scale-110"
+                src="./assets/customers/17.jpg"
+                alt="Picture of dog"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Types Section-->
+      <section id="types">
+        <div class="types-section space-y-20 font-body text-txt-dark">
+          <h3 class="text-3xl">Find suitable dog for you</h3>
+          <!-- Items Container -->
+          <div class="flex flex-col gap-16 md:flex-row md:gap-12">
+            <!-- Item 1 -->
+            <div class="flex flex-col items-center gap-2">
+              <svg class="icon icon-circle">
+                <use xlink:href="./assets/icons.svg#size"></use>
+              </svg>
+              <!-- <img
+                src="./assets/size.svg"
+                alt=""
+                class="w-20 "
+              /> -->
+              <h4 class="text-lg font-bold">Size</h4>
+              <p class="text-grayishBlue max-w-md">
+                It's important to choose a dog that fits your living situation
+                and available space.
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex flex-col items-center gap-2">
+              <svg class="icon icon-circle">
+                <use xlink:href="./assets/icons.svg#character"></use>
+              </svg>
+              <h4 class="text-lg font-bold">Character</h4>
+              <p class="text-grayishBlue max-w-md">
+                Choose a dog with a character that matches your personality and
+                lifestyle to ensure a happy and long-lasting relationship.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex flex-col items-center gap-2">
+              <svg class="icon icon-circle">
+                <use xlink:href="./assets/icons.svg#energy"></use>
+              </svg>
+              <h4 class="text-lg font-bold">Energy</h4>
+              <p class="text-grayishBlue max-w-md">
+                Make sure to match the energy level of the dog with your
+                lifestyle to ensure a good fit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta">
+        <div class="cta grid place-items-center space-y-8 bg-prim-200 py-20">
+          <h4
+            class="text-center font-body text-4xl font-bold uppercase text-txt-dark md:text-5xl"
+          >
+            Got any questions?
+          </h4>
+          <a
+            href="https://www.facebook.com/rodel.arcoirez"
+            class="btn bg-prim-400 text-white hover:bg-opacity-80 md:text-xl"
+            >Contact me</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-prim-600">
+      <section class="footer">
+        <div
+          class="flex flex-col items-center justify-center gap-8 p-6 md:flex-row md:justify-between"
+        >
+          <!-- Logo -->
+          <a href="/" class="outline-none">
+            <svg class="h-20 w-48 cursor-pointer">
+              <use xlink:href="./assets/icons.svg#logo"></use>
+            </svg>
+          </a>
+
+          <!-- Social links and Copyright -->
+          <div class="space-y-4">
+            <!-- Social Links -->
+            <ul class="flex items-center justify-center gap-4">
+              <li>
+                <a href="https://www.facebook.com/rodel.arcoirez">
+                  <svg
+                    title="instagram icon"
+                    class="h-10 w-10 transition hover:scale-90"
+                  >
+                    <use xlink:href="./assets/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <svg
+                    title="instagram icon"
+                    class="h-10 w-10 transition hover:scale-90"
+                  >
+                    <use xlink:href="./assets/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <svg
+                    title="instagram icon"
+                    class="h-10 w-10 transition hover:scale-90"
+                  >
+                    <use xlink:href="./assets/icons.svg#tiktok"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!-- Copyright-->
+            <p class="text-white">© 2023 Spicoder. All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
